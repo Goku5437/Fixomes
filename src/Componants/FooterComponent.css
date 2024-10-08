@@ -1,0 +1,64 @@
+.footer {
+    height: 400px;
+    width: 100%;
+    background-color: white;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    align-items:flex-start;
+    
+
+}
+
+.about {
+
+    
+    width: 20%;
+}
+
+.Menu {
+    width: 10%;
+    
+
+
+}
+.Menu ul{
+
+    display: flex; flex-direction: column; justify-content: center;
+    padding: 0px 0px 0px 20px ;
+}
+
+.Services {
+    width: 10%;
+
+
+}
+.Services ul{
+    display: flex; flex-direction: column; justify-content: center;
+    padding: 0px 0px 0px 20px ;
+}
+
+
+.Contact {
+    width: 10%;
+
+
+}
+.Contact ul{
+    display: flex; flex-direction: column; justify-content: center;
+    padding: 0px 0px 0px 20px ;
+}
+
+.Menu ul li a, .Services ul li a, .Contact ul li a{
+text-decoration: none;
+color: white;
+}

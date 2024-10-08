@@ -1,0 +1,61 @@
+.card {
+  position: relative;
+  background-color: #c3bebe;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 59%;
+  height: 300px;
+  border-radius: 20px;
+  overflow: hidden; /* Ensure content is clipped when it grows */
+  transition: transform 0.3s ease; /* Add transition for the zoom effect */
+}
+
+/* Zoom effect on hover */
+.card:hover {
+  transform: scale(1.05); /* Scale the card slightly on hover */
+}
+
+.card_div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-content img {
+  width: 100%; /* Resize image to 80% of the card width */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 150px; /* Limit the maximum height */
+  border: 1px solid transparent;
+  object-fit: contain;
+  overflow: hidden;
+  transition: transform 0.3s ease; /* Add transition for smooth zoom on hover */
+}
+
+/* Zoom effect on image hover */
+.card:hover .card-content img {
+  transform: scale(1.1); /* Scale the image slightly more on hover */
+}
+
+/* Mobile Devices Small ones */
+@media only screen and (max-width: 480px) {
+  .card {
+    position: relative;
+    border-radius: 50px;
+    border: 1px solid rgb(66, 215, 61);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 59%;
+    height: 300px;
+  }
+
+  .card-content img {
+    width: 100%; /* Smaller width for mobile devices */
+    max-height: 120px; /* Limit height further for smaller screens */
+  }
+
+  .card_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

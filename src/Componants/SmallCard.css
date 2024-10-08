@@ -1,0 +1,42 @@
+.Smallcard {
+    position: relative;
+    border-radius: 50px;
+
+    border: 1px solid rgb(66, 215, 61);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 20%;
+    height: 300px;
+  }
+  .card-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .card-content h3 {
+    margin: 0;
+    font-size: 1.25rem;
+    color: #333;
+  }
+  
+  .card-content p {
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
+  /* Mobile Devices Small ones */
+
+@media only screen and (max-width: 480px) {
+    .Smallcard{
+        position: relative;
+    border-radius: 50px;
+
+    border: 1px solid rgb(66, 215, 61);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    height: 300px;
+    }
+  }
