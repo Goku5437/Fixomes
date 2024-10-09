@@ -23,7 +23,7 @@ import Electrical from "./Componants/Electrical.jsx";
 import DetailCardComponent from "./Componants/DetailCardComponent.jsx";
 
 import ReapirComponentDetail from "./Componants/ReapirComponentDetail.jsx";
-import { useState,useContext,createContext } from "react";
+import { useState,useContext,createContext, useEffect } from "react";
 import {UserProvider} from "./Context/context.jsx"
 import { UserContext } from './Context/context'
 
@@ -34,8 +34,14 @@ import { UserContext } from './Context/context'
 
 function App() {
   
-  const {navVisibility, changeVisibility}  = useContext(UserContext);
+  const {navVisibility, changeVisibility,changeVisibilityTrue}  = useContext(UserContext);
  
+  useEffect(() => {
+    changeVisibilityTrue();
+  
+    
+  }, [])
+  
   
   return (
     <>
