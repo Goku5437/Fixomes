@@ -1,6 +1,6 @@
 import "./App.css";
 import Card from "./Componants/Card";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Link, useLocation, useNavigate } from "react-router-dom";
 import NavBar from "./Componants/navBar";
 import CrossfadeCarousel from "./Componants/CrossfadeCarousel";
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -34,11 +34,16 @@ import { UserContext } from './Context/context'
 
 function App() {
   
-  const {navVisibility, changeVisibility,changeVisibilityTrue}  = useContext(UserContext);
+  const { changeVisibility,changeVisibilityTrue}  = useContext(UserContext);
  
+
   useEffect(() => {
-    changeVisibilityTrue();
-  
+    
+  window.addEventListener('popstate', changeVisibilityTrue);
+
+    return () => {
+      window.removeEventListener('popstate', changeVisibilityTrue);
+    };
     
   }, [])
   
