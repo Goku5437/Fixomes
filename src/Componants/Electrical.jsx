@@ -8,10 +8,12 @@ import office_cleaning from "../assets/office_cleaning.jpg";
 import marble_cleaning from "../assets/marble_cleaning.jpg";
 import bathroom_cleaning from "../assets/bathroom_cleaning.jpg";
 import DetailCardComponent from './DetailCardComponent';
+import NavBar from './navBar';
 
 
 function Electrical() {
   return (<>
+  <NavBar />
     
     
     <div className='main_div'>

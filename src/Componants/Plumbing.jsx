@@ -8,9 +8,11 @@ import office_cleaning from "../assets/office_cleaning.jpg";
 import marble_cleaning from "../assets/marble_cleaning.jpg";
 import bathroom_cleaning from "../assets/bathroom_cleaning.jpg";
 import DetailCardComponent from './DetailCardComponent';
+import NavBar from './navBar';
 
 function Plumbing() {
-  return (
+  return (<>
+  <NavBar />
     <div className='main_div'>
     <DetailCardComponent  home_cleaning = {clogged_pipe} heading = "Clogged Pipe Repair & Unclogging" paragraph = "Say goodbye to slow drains and backups with professional clogged pipe repair services."/>
     <DetailCardComponent  home_cleaning = {Wash_basin} heading = "Wash Basin Repair & Service" paragraph = "Ensure your wash basin functions perfectly with professional repair services."/>
@@ -26,6 +28,7 @@ function Plumbing() {
 
     
     </div>
+    </>
   )
 }
 

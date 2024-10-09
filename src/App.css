@@ -90,6 +90,10 @@ color: white;
 .heading1 h1{
   color: black;
 }
+.a-setting{
+  text-decoration: none!important;
+  color: rgb(0,128,105);
+}
 .paragrah1{
   position: absolute;
   top: 45%;

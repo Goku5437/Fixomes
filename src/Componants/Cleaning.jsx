@@ -8,10 +8,12 @@ import office_cleaning from "../assets/office_cleaning.jpg";
 import marble_cleaning from "../assets/marble_cleaning.jpg";
 import bathroom_cleaning from "../assets/bathroom_cleaning.jpg";
 import DetailCardComponent from './DetailCardComponent';
+import NavBar from './navBar';
 
 function Cleaning() {
   return (
     <>
+    <NavBar />
     <div className='main_div'>
     <DetailCardComponent  home_cleaning = {home_cleaning} heading = "Home Cleaning" paragraph = "Get professional home cleaning services that leave your entire house spotless and refreshed."/>
     <DetailCardComponent  home_cleaning = {kitchen_cleaning} heading = "Kitchen Cleaning" paragraph = "Say goodbye to grease and dirt with expert kitchen cleaning services."/>

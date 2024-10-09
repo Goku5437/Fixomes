@@ -23,14 +23,26 @@ import Electrical from "./Componants/Electrical.jsx";
 import DetailCardComponent from "./Componants/DetailCardComponent.jsx";
 
 import ReapirComponentDetail from "./Componants/ReapirComponentDetail.jsx";
+import { useState,useContext,createContext } from "react";
+import {UserProvider} from "./Context/context.jsx"
+import { UserContext } from './Context/context'
+
+
+
+
 
 
 function App() {
   
+  const {navVisibility, changeVisibility}  = useContext(UserContext);
+ 
+  
   return (
     <>
      <BrowserRouter>
+    
       <Routes>
+      
         <Route  path="/" element={<div className="main_outerDiv">
         <div className="slide_Div">
           <NavBar />
@@ -39,28 +51,28 @@ function App() {
           </div>
           <h1 className="OUR_SERVICE" id="services">OUR SERVICES</h1>
           <div className="card-main-container">
-          <Link to="/repair">
+          <Link className="a-setting" to="/repair" onClick = {changeVisibility}>
           <div className="card_div">
             <Card image = {almirah} idScroll = "#repair" />
             <h6>Appliances and Repair Services </h6>
             
           </div>
           </Link>
-          <Link to="/electrical">
+          <Link className="a-setting" to="/electrical" onClick = {changeVisibility}>
           <div className="card_div">
             <Card image = {Plug}  idScroll = "#electrical"/>
             <h6>Electrical Services</h6>
             
           </div>
           </Link>
-          <Link to="/plumbing">
+          <Link className="a-setting" to="/plumbing" onClick = {changeVisibility}>
           <div className="card_div">
             <Card image = {Flush} idScroll="#plumbing" />
             <h6>Plumbing Services</h6>
             
           </div>
           </Link>
-          <Link to="/cleaning">
+          <Link className="a-setting" to="/cleaning" onClick = {changeVisibility}>
           <div className="card_div">
             <Card image = {Brrom} idScroll="#cleaning"/>
             <h6>Cleaning Services</h6>
@@ -86,7 +98,9 @@ function App() {
       <Route path="cleaning" element={<Cleaning />} />
       <Route path="plumbing" element={<Plumbing />} />
       <Route path="electrical" element={<Electrical />} />
+     
       </Routes>
+      
     </BrowserRouter>
       
 
