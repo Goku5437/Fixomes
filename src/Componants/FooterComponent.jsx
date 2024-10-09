@@ -9,7 +9,7 @@ function FooterComponent() {
         window.open(url,'_blank')
     }
     return (
-        <div className='footer'>
+        <div id='footer' className='footer'>
             <div className='navbar'>
                 <div className='about'>
 

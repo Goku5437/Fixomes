@@ -25,7 +25,7 @@ function NavBar() {
         <li><a  href="/">Home</a></li></Link>
         <li><a  href="#aboutUs">About</a></li>
         <li><a  href="#services">Services</a> </li>
-        <li><a  href="#contactUs">Contact US</a></li>
+        <li><a  href="#footer">Contact Us</a></li>
       </ul>
       <span className='bookNow' onClick={handleWhatsapp}>
       {/* <FontAwesomeIcon icon={faCalendar}  /> */}

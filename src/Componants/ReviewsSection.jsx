@@ -42,16 +42,17 @@ const ReviewsSection = () => {
       </div>
       <div className="right-side">
         <div className="review">
-          <p>"Amazing service! They were quick, efficient, and super friendly. Would definitely recommend to anyone!"</p>
-          <p><strong>- John Doe, 5 Stars</strong></p>
+          <p>"I get excellent work by Fixomes, I called for  Chimney service  and refrigerator regarding problem. I got satisfactory Service with reasonable prices. I recommend this to get satisfied job by Fixomes."</p>
+          <p><strong>- Harish Tewari, 4.7 Stars</strong></p>
         </div>
         <div className="review">
-          <p>"Prompt response and solved my issue with professionalism. Very satisfied with the service!"</p>
-          <p><strong>- Jane Smith, 5 Stars</strong></p>
+          <p>"I have hired them for AC service which they carried out very professionally. I think if you are using services like urban clap etc., you should give them a try instead as I found them very professional. They carry out the service neatly and  even cleanup any inevitable mess created during the process. Last but not least the charges are very nominal which will go easy on your pocket"</p>
+          <p><strong>- Savitoj Singh, 5 Stars</strong></p>
         </div>
         <div className="review">
-          <p>"The technician arrived on time and provided excellent service. My go-to company from now on!"</p>
-          <p><strong>- Sarah Williams, 5 Stars</strong></p>
+          <p>"a month ago
+          Amazing deep cleaning service in Chandigarh! My home looks sparkling clean. The team was professional and efficient. Highly recommend!"</p>
+          <p><strong>- Jitesh Bagdwal , 5 Stars</strong></p>
         </div>
         
       </div>
