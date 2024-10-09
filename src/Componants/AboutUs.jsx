@@ -1,4 +1,4 @@
-import React from 'react';
+ import React from 'react';
 import './AboutUs.css'; // Import the CSS file
 import AboutUSImage from "../assets/AboutUSImage.jpeg"
 import { useInView } from 'react-intersection-observer';

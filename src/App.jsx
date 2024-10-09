@@ -17,10 +17,12 @@ import ElectricalComponant from "./Componants/ElectricalComponant.jsx";
 import PlumbingComponant from "./Componants/PlumbingComponant.jsx";
 import CleaningComponant from "./Componants/CleaningComponant.jsx";
 import FooterComponent from "./Componants/FooterComponent.jsx";
-import Repair from "./Componants/Repair.jsx";
 import Cleaning from "./Componants/Cleaning.jsx";
 import Plumbing from "./Componants/Plumbing.jsx";
 import Electrical from "./Componants/Electrical.jsx";
+import DetailCardComponent from "./Componants/DetailCardComponent.jsx";
+
+import ReapirComponentDetail from "./Componants/ReapirComponentDetail.jsx";
 
 
 function App() {
@@ -79,7 +81,8 @@ function App() {
         <FooterComponent/>
       </div>}>
       </Route>
-      <Route path="repair" element={<Repair />} />
+      <Route path="repair" element={< ReapirComponentDetail />} />
+
       <Route path="cleaning" element={<Cleaning />} />
       <Route path="plumbing" element={<Plumbing />} />
       <Route path="electrical" element={<Electrical />} />
