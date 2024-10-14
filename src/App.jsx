@@ -26,10 +26,14 @@ import ReapirComponentDetail from "./Componants/ReapirComponentDetail.jsx";
 import { useState,useContext,createContext, useEffect } from "react";
 import {UserProvider} from "./Context/context.jsx"
 import { UserContext } from './Context/context'
-
-
-
-
+import "./Componants/PopularServices.css"
+import PopularServices from "./Componants/PopularServices.jsx";
+import Basinrepair from "./assets/Basinrepair.png"
+import chimney from "./assets/chimney.jpg"
+import RO from "./assets/RO.jpg"
+import tank_cleaning from "./assets/tank_cleaning.jpg"
+import ACRepair from "./assets/ACRepir.jpeg"
+import Wash_basin from "./assets/Wash_basin.jpg"
 
 
 function App() {
@@ -93,10 +97,20 @@ function App() {
         </div>
           
         </div>
-        <RepairComponant/>
+        {/* <RepairComponant/>
         <CleaningComponant/>
         <PlumbingComponant/>
-        <ElectricalComponant/>
+        <ElectricalComponant/> */}
+        <h3 className="our-services">Our Popular Services</h3>
+        <div className="outer-container">
+          <PopularServices images ={chimney} heading = "Chimney Services" price ="499"/>
+          <PopularServices images ={Basinrepair} heading = "Bathroom Cleaning" price ="499"/>
+          <PopularServices images ={RO} heading = "RO Services" price ="350"/>
+          <PopularServices images ={tank_cleaning} heading = "Tank Services" price ="299"/>
+          <PopularServices images ={ACRepair} heading = "AC Services" price ="399"/>
+          <PopularServices images ={Wash_basin} heading = "Plumbing Services" price ="99"/>
+        </div>
+
         <ServiceSection/>
         <ReviewsSection/>
         <WhatsappButton/>

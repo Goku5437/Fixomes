@@ -20,7 +20,7 @@ function CleaningComponant() {
     }}>
     <div className="appliances-container " id='cleaning'>
       <h2>Cleaning Services</h2>
-      
+      <p>Cleaning is not an easy task. Imagine cleaning a twenty feet office wall is extremely difficult. Home at a posh place, needs a bit extra. Beautiful houses needs care and cleaning. It is difficult to get the home cleaned from corner to corner, as it includes all the windows, wardrobes, walls, washrooms, pantries, cabins and workstations, complete floor, stairs, grills, doors, electrical fittings and more. It is a task for professionals.</p>
       <div className="appliances-content">
         {/* Left side with buttons */}
         <div className="services-buttons">
